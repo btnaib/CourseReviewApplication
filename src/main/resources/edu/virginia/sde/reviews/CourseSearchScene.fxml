@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="edu.virginia.sde.reviews.CourseSearchController"
+      alignment="CENTER" spacing="12" >
+
+    <Label text="Course Search" style="-fx-font-size: 18px;" />
+
+    <TextField fx:id="searchField" promptText="Search Bar" />
+    <Button text="Search" onAction="#handleSearch" />
+
+    <ListView fx:id="courseListView"  VBox.vgrow="ALWAYS" />
+
+    <TextField fx:id="addSubjectField" promptText="Subject Mnemonic" />
+    <TextField fx:id="addNumberField" promptText="Course Number" />
+    <TextField fx:id="addTitleField" promptText="Course Title" />
+
+    <Button text="Add Course" onAction="#handleAddCourse" />
+
+    <Label fx:id="addCourseMessageLabel" textFill="red" wrapText="true" />
+
+    <Button text="My Reviews" onAction="#handleGoMyReviews" />
+
+    <Button text="Log Out" onAction="#handleLogOut" />
+
+</VBox>

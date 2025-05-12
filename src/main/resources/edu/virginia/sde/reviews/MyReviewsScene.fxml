@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="edu.virginia.sde.reviews.MyReviewsController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <VBox spacing="10" layoutX="20" layoutY="20" prefWidth="560">
+
+        <Label text="My Reviews" style="-fx-font-size: 18px;" />
+
+        <ListView fx:id="myReviewsListView" prefHeight="300"/>
+
+        <Button fx:id="backButton" text="Back to Courses" onAction="#handleBack"/>
+    </VBox>
+
+</AnchorPane>
